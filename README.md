@@ -4,8 +4,6 @@ Welcome to the Maze Online Game! This simple web-based game challenges you to na
 
 ![Game footage](https://user-images.githubusercontent.com/68788933/229954640-2680a539-cf6e-4e80-af75-12441e093c5b.png)
 ![Captura de Pantalla 2023-11-20 a la(s) 3 27 34 p m](https://github.com/jsurrea/Maze-Online/assets/68788933/36a30fd2-52f5-4c38-8f2c-470d3a7e239c)
-![Captura de Pantalla 2023-11-20 a la(s) 3 28 26 p m](https://github.com/jsurrea/Maze-Online/assets/68788933/b8b8524a-3a0c-436b-a87c-683b2254dd1c)
-
 
 
 ## How to Play
