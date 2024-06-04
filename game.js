@@ -37,10 +37,23 @@ let timeStart;
 let timeInterval;
 let impactPositions;
 
+//backsound
+const backsound = new Audio('subway.mp3');
+
+//Sound Win
+const soundwin = new Audio('gamewin.wav');
+
+//Sound Lose
+const soundLose = new Audio('gameover.wav')
+
 function loadMap() {
 
     // Set current map to display
     const currentMap = maps[levelNumber];
+
+    //Start Play Sound
+    backsound.play();
+    backsound.loop = true;
 
     // Parse the config String
     return currentMap.split("\n")
@@ -195,8 +208,9 @@ function handleWinCollision() {
             spanBest.textContent = recordTime;
         }
         
-        modalWin.classList.remove('inactive');
+        showModalWin('inactive');
     }
+
 }
 
 function handleLoseCollision() {
@@ -296,13 +310,23 @@ function renderGameOver(radius) {
     // Lower line
     for(let posX = leftPosition; posX <= rightPosition; posX++)
         if(map2DArray[lowerPosition][posX] == 'X')
-            renderElement('BURN', {posX, posY: lowerPosition});
+            renderElement('BURN', {posX, posY: lowerPosition});    
+
+    //IF ELSE GAME WIN LOSE
+    backsound.pause();
 }
 
 function showModalLose() {
     modalLose.classList.remove('inactive');
     document.querySelector('#modal-current-level').textContent = levelNumber + 1;
     document.querySelector('#modal-total-levels').textContent = TOTAL_LEVELS;
+    soundLose.play();
+}
+
+function showModalWin() {
+    modalWin.classList.remove('inactive');
+    backsound.pause();
+    soundwin.play();
 }
 
 // General event listeners

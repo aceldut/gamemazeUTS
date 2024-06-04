@@ -8,23 +8,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
-    <title>Maze Online</title>
+    <title>Kelompok 5</title>
 </head>
 <body>
 
     <div class="modal modal-rules" style="background-color: rgba(0, 0, 0, 1)">
+        <p style="color: yellow; font-size: 46px;">TERSESAT</p>
+        <div>
+            <p style="font-size: 25px;">
+                You are 🏃 <br>
+                You start at 🚪 <br>
+                You go to 🎁 <br>
+                You avoid 🌳
+            </p>
+        </div>
         <p style="color: yellow; font-size: 46px;">RULES</p>
         <div>
-            <p>YOU are 🏃‍♂️</p>
-            <p>You start at 🚪</p>
-            <p>You go to 🎁</p>
-            <p>You avoid 🌳</p>
+            <p style="font-size: 20px; padding-right: 1cm; padding-left: 1cm;">
+                Game Tersesat adalah permainan di mana pemain harus menavigasi karakter atau objek melalui sebuah labirin atau struktur 
+                yang rumit dengan tujuan mencapai titik akhir atau objektif tertentu. Labirin biasanya terdiri dari lorong-lorong yang 
+                bercabang dan berbelok-belok, dengan beberapa rintangan atau hambatan yang harus diatasi. <br><br><br>
+                cara menggerakkan karakter menggunakan tombol panah di keyboard:
+                <br><br>
+                Panah Kiri (←): Tekan tombol panah kiri untuk membuat karakter bergerak ke kiri dalam game. Ini biasanya digunakan untuk menggerakkan karakter ke arah kiri dalam labirin atau ruang permainan.
+                <br><br>
+                Panah Kanan (→): Tekan tombol panah kanan untuk membuat karakter bergerak ke kanan dalam game. Ini berguna untuk mengarahkan karakter ke kanan untuk menghindari rintangan atau menemukan jalan keluar dari labirin.
+                <br><br>
+                Panah Atas (↑): Dengan menekan tombol panah atas, karakter akan bergerak ke atas dalam permainan. Ini memungkinkan karakter untuk bergerak maju atau naik tangga ke level yang lebih tinggi dalam game.
+                <br><br>
+                Panah Bawah (↓): Tekan tombol panah bawah untuk membuat karakter bergerak ke bawah dalam permainan. Ini dapat digunakan untuk menggerakkan karakter mundur atau turun tangga ke level yang lebih rendah dalam permainan.
+            </p>
         </div>
         <p><span class="keyboard-control inactive">Press ENTER</span> <span class="mobile-control">TOUCH</span> to start playing</p>
     </div>
 
     <div class="modal modal-win inactive">
-        <p style="color: green; font-size: 46px;">YOU WIN!</p>
+        <p style="color: rgb(7, 25, 119); font-size: 46px;">YOU WIN!</p>
         <p style="font-size: 80px; margin: 40px auto;">🏆</p>
         <div>
             <p>Your score: <span id="modal-your-score"></span></p>
@@ -46,7 +65,7 @@
 
         <div class="top-container">
             <p>Lives <br/> <span id="lives"></span></p>
-            <h1 class="title">Maze <br/> Online</h1>
+            <h1 class="title">TERSESAT<br/></h1>
             <p>Time <br/> <span id="time"></span></p>
         </div>
         
